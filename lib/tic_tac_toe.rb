@@ -121,7 +121,7 @@ end
 #Play
 def play(board)
   play_count = 1
-  while play_count <= 3
+  until play_count <= 3
     turn(board)
   end
   if won?(board)

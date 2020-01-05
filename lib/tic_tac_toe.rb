@@ -123,6 +123,7 @@ def play(board)
   play_count = 1
   until play_count <= 3
     turn(board)
+    play_count += 1
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
